@@ -140,6 +140,7 @@ header .nav a:hover{
     background-size: 130%;
     padding-top: 80px;
     padding-bottom: 55px;
+	text-align:center;
 }
 
 #intro p{
@@ -336,6 +337,7 @@ header .nav a:hover{
     }
 
 }
+
 
 
 
