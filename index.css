@@ -99,7 +99,7 @@ header{
 	display: flex;
 	height: 75px;
     font-family: "Noto Serif", serif;
-    background-image:linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0.1)), linear-gradient(270deg, rgba(88, 45, 5, 0.3), rgba(0,0,0,0.1)), url("./imagenes/Fondo.png");
+    background-image:linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0.1)), linear-gradient(270deg, rgba(88, 45, 5, 0.3), rgba(0,0,0,0.1)), url("./Imagenes/Fondo.png");
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 10px;
@@ -343,4 +343,5 @@ header .nav a:hover{
         width: 100%;
         border-bottom:solid 3px #5e3700;
     }
+
 }
