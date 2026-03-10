@@ -152,7 +152,7 @@ header .nav a:hover{
 }
 
 #intro .video iframe{
-	align-items:center;
+	margin:40px;
 }
 
 #trama{
@@ -337,6 +337,7 @@ header .nav a:hover{
     }
 
 }
+
 
 
 
