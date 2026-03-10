@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    color:antiquewhite;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.autoShow{
+    animation: text-appear both;
+     animation-timeline: view();
+     animation-range: entry 10% cover 100vh;
+}
+
+@keyframes text-appear{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.imageReveal{
+    animation: imageReveal both;
+    animation-timeline: view(10% 10%);
+}
+
+@keyframes imageReveal{
+    from{
+        filter: saturate(0) contrast(4) brightness(.1) blur(0px);
+        opacity: 0;
+        scale: .95;
+        translate: 0 4rem;
+    }
+    to{
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.4em;}
+h3{font-size: 1.5em;}
+p{font-size: 1.12em;}
+ul{list-style-type:decimal;}
+li{font-size: 1.08em;}
+
+button{
+    font-size: 1.2em;
+    padding: 8px 30px;
+    border-radius: 4.5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    color:azure;
+    background-color:#0C062B;
+    transition: 150ms ease;
+}
+
+button:hover{
+    background-color: #b37d0b;
+    scale: 1.1;
+}
+
+h1{
+    font-family: "Noto Serif", serif;
+}
+
+h2{
+    font-family: "Noto Serif", serif;
+    animation: 3s infinite alternate slide-in;
+}
+
+p{
+    text-align: justify;
+}
+
+header{
+	display: flex;
+	height: 75px;
+    font-family: "Noto Serif", serif;
+    background-image:linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0.1)), linear-gradient(270deg, rgba(88, 45, 5, 0.3), rgba(0,0,0,0.1)), url("./imagenes/Fondo.png");
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+    z-index: 9999;
+}
+
+header .logo img{
+	height: 85px;
+	margin: 40px;
+    padding: 12px;
+}
+
+header .nav a{
+	font-weight: 600;
+    color: rgb(255, 250, 220);
+	padding-right: 10px;
+    text-decoration: none;
+}
+
+header .nav a:hover{
+	color: #b37d0b;
+	text-decoration: underline;
+}
+
+@media (max-width:700px){
+	header{
+		flex-direction: column;
+	}
+
+	nav{
+		padding: 10px 0px;
+	}
+}
+
+#intro{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.75)), url("./Imagenes/Fondo1.png");
+    background-position: top;
+    background-size: 130%;
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+
+#intro p{
+    margin: 10px;
+    margin-left:20px ;
+    margin-right:20px;
+    line-height: 28px;
+    padding: 20px;
+}
+
+#intro .video{
+    text-align: center;
+    padding: 10px;
+}
+
+#trama{
+    text-align: center;
+    color: rgb(255, 248, 238);
+    padding: 65px 10px;
+    background-color: #060315;
+    line-height: 28px;
+    display:block;
+    padding-bottom: 100px;
+}
+
+#trama .texto{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#trama .container{
+    background-color: #060315;
+    padding: 10px 0px;
+    display:block;
+    column-count: 2;
+}
+
+#trama .video{
+    display:inline-block;
+    border: solid 2.3px rgba(255, 248, 238,0.5);
+    border-style:groove;
+    line-height: 0;
+    margin: 45px;
+}
+
+#personajes{
+    background-color: rgb(255, 250, 231);
+    color: #08041e;
+    text-align: center;
+    padding: 5px 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+#personajes .container{
+    display: block;
+    column-count: 2;
+}
+
+#personajes h2{
+    padding: 5px 20px;
+    font-family: "Noto Serif", serif;
+    padding-bottom: 5px;
+}
+
+#personajes h3{
+    font-family: "Noto Serif", serif;
+    padding-top: 5px;
+}
+
+#personajes button{
+    padding: 8px 17px;
+    margin-bottom: 25px;
+}
+
+#personajes .cart{
+    padding: 15px;
+}
+
+#personajes .image-container{
+    border: solid 8px;
+    border-color:#2e1c00;
+    display: inline-block;
+    line-height: 0;
+}
+
+#lista h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+    color: #ffe19b;
+}
+
+#lista{
+    text-align: center;
+    padding: 70px 0px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-image:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(255,255,255,0.06)), url("./Imagenes/Fondo2.jpg");
+    background-size: 100%;
+}
+
+#lista .table{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#lista .table th, td{
+    line-height: 25px;
+    color: #ffe19b;
+    border: solid 3px rgb(167, 100, 0);
+    padding: 10px;
+    background-color: rgb(1, 1, 16);
+}
+
+#lista a{
+    color: skyblue;
+}
+
+#espacios h2{
+    text-align: center;
+}
+
+#espacios{
+    background:#432700;
+    color: antiquewhite;
+    padding: 30px 10px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    column-count: 4;
+    justify-content: space-evenly;
+}
+
+#espacios li{
+    margin: 24px;
+}
+
+#espacios img{
+    width: 285px;
+    height: 160px;
+    margin: 5px;
+    border: solid 1px, rgb(255, 220, 174);
+}   
+
+#footer{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("./Imagenes/Fondo.png");
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top:solid 4px #2e1c00;
+    height: 100%;
+}
+
+#footer img{
+    display:inline-block;
+    border: solid 2.3px rgba(255, 248, 238,0.5);
+    border-style:groove;
+    line-height: 0;
+    margin:20px;
+}
+
+#footer p{
+    font-size: 0.9em;
+    padding-bottom: 15px;
+
+}
+
+#footer button{
+    font-size: 0.8em;
+    padding: 8px 30px;
+    border-radius: 3.5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    color:azure;
+    background-color:#0C062B;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+#footer button:hover{
+    background-color: #b37d0b;
+}
+
+#footer .footer-links{
+    display: table-row-group;
+    justify-content:space-around;
+}
+
+@media (min-width:720px){
+    
+    header{
+        position:fixed;
+        width: 100%;
+        border-bottom:solid 3px #5e3700;
+    }
+}
