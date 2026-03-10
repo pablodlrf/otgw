@@ -179,6 +179,14 @@ header .nav a:hover{
     column-count: 2;
 }
 
+#trama .video{
+    display:inline-block;
+    border: solid 2.3px rgba(255, 248, 238,0.5);
+    border-style:groove;
+    line-height: 0;
+    margin: 45px;
+}
+
 #personajes{
     background-color: rgb(255, 250, 231);
     color: #08041e;
@@ -339,6 +347,7 @@ header .nav a:hover{
     }
 
 }
+
 
 
 
