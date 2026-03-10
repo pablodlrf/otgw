@@ -150,11 +150,6 @@ header .nav a:hover{
     padding: 20px;
 }
 
-#intro .video{
-    text-align: center;
-    padding: 10px;
-}
-
 #trama{
     text-align: center;
     color: rgb(255, 248, 238);
@@ -337,4 +332,5 @@ header .nav a:hover{
     }
 
 }
+
 
